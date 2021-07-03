@@ -1,0 +1,247 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+a {
+  text-decoration: none;
+  color: #5C7FB8
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.movie-card {
+  font: 14px/22px "Lato", Arial, sans-serif;
+  color: #A9A8A3;
+  padding: 40px 0;
+}
+.movie-card img {
+    width: 25%;
+}
+.container10 {
+  margin: 0 auto;
+  width: 1024px;
+  height: 768px;
+  background: #F0F0ED;
+  border-radius: 5px;
+  position: relative;
+}
+#movie5 {
+    color: white;
+}
+.hola {
+    margin-top: 35px
+}
+.hero {
+  height: 342px;  
+  margin:0;
+  position: relative;
+  overflow: hidden;
+  z-index:1;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+    
+}
+.flexible{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.hero:before {
+  content:'';
+  width:100%; height:100%;
+  position:absolute;
+  overflow: hidden;
+  top:0; left:0;
+  z-index:-1;
+ 
+  transform: skewY(-2.2deg);
+  transform-origin:0 0;
+  
+}
+
+.cover10 {
+  position: absolute;
+  top: 90px;
+  left: 10px;
+  z-index: 2;
+}
+
+.details10 {
+  
+  padding: 190px 0 0 280px;
+}  
+  
+.title10 {
+    color: white;
+    font-size: 44px;
+    margin-bottom: 13px;
+    position: relative;
+}    
+
+
+.description {
+  
+  bottom: 0px;
+  height: 200px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #B1B0AC;
+  
+}
+
+.column10 {
+  padding-left: 50px;
+  padding-top: 120px;
+  width: 220px;
+  float: left;
+  text-align: center;
+}
+.release_date {
+    margin-top: 80px;
+    font-size: 1.5em;
+}
+.tag {
+  background: white;
+  border-radius: 10px;
+  padding: 3px 8px;
+  font-size: 14px;
+  margin-right: 4px;
+  margin-top: 25px;
+  line-height: 20px;
+  cursor: pointer;
+  width: 45%;
+}
+
+.tag:hover {
+  background: #ddd;
+}
+
+.column20 {
+  padding-left: 41px;
+  padding-top: 30px;
+  margin-left: 70px;
+  width: 600px;
+  float: left;
+  font-size: 1.5em;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.avatars {
+  margin-top: 130px;
+  text-align: center;
+  overflow: hidden;
+}  
+.avatars img {
+    cursor: pointer;
+    width: 15%;
+    
+}
+.avatars i {
+  overflow: hidden;
+}  
+.avatars img:hover {
+    opacity: 0.6;
+  }
+  
+.avatars a:hover {
+    text-decoration: none;
+  }
+
+fieldset, label { margin: 0; padding: 0; }
+
+
+.rating10 { 
+  border: none;
+  float: left;
+  margin-top: 20px;
+}
+
+.rating10 > input { display: none; } 
+.rating10 > label:before { 
+  margin: 5px;
+  margin-top: 0;
+  font-size: 1em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating10 > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating10 > label { 
+  color: #ddd; 
+ float: right; 
+}
+
+
+.rating10 > input:checked ~ label,
+.rating10:not(:checked) > label:hover, 
+.rating10:not(:checked) > label:hover ~ label { color: #FFD700;  } 
+
+.rating10 > input:checked + label:hover, 
+.rating10 > input:checked ~ label:hover,
+.rating10 > label:hover ~ input:checked ~ label, 
+.rating10 > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+
+
+
+a[data-tooltip] {
+  position: relative;
+}
+a[data-tooltip]::before,
+a[data-tooltip]::after {
+  position: absolute;
+  display: none;
+  opacity: 0.85;
+}
+a[data-tooltip]::before {
+ 
+  content: attr(data-tooltip);
+  background: #000;
+  color: #fff;
+  font-size: 13px;
+  padding: 5px;
+  border-radius: 5px;
+  
+  white-space: nowrap;
+  text-decoration: none;
+}
+a[data-tooltip]::after {
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  content: '';
+}
+
+a[data-tooltip]:hover::before,
+a[data-tooltip]:hover::after {
+  display: block;
+}
+
+a[data-tooltip][data-placement="top"]::before {
+  bottom: 100%;
+  left: 0;
+  margin-bottom: 40px;
+}
+a[data-tooltip][data-placement="top"]::after {
+  border-top-color: #000;
+  border-bottom: none;
+  bottom: 50px;
+  left: 20px;
+  margin-bottom: 4px;
+  width: 10%;
+}
+.avatares {
+    width: 60%;
+}
